@@ -7,3 +7,8 @@ Ce dépôt contient des fichiers utilisés pour l'atelier d'initiation à la pro
 
 Les fichiers CSV contiennent des données publiques de la Ville de Montréal. Le format des données a été légèrement modifié pour faciliter les exercices. Les originaux sont disponibles sur le site de la Ville de Montréal:
 https://donnees.montreal.ca/ville-de-montreal
+
+
+## Droits d'auteur
+
+Les notebooks Jupyter sont des logicels libres. Voir COPYING.md pour les détails.
