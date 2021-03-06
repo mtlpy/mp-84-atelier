@@ -11,4 +11,4 @@ https://donnees.montreal.ca/ville-de-montreal
 
 ## Droits d'auteur
 
-Les notebooks Jupyter sont des logicels libres. Voir COPYING.md pour les détails.
+Les notebooks Jupyter et les scripts Python sont des logicels libres. Voir COPYING.md pour les détails.
