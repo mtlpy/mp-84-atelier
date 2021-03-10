@@ -11,12 +11,14 @@ def main():
 
     # Creating two lists, of mentors and apprentis respectively
     with open('members.txt', 'r') as f:
-        lines = f.readlines()
-        for line in lines:
-            if line[-2] == "🐍":
-                mentors.append(line[:-1])
+        # lines = f.readlines()
+        # for line in lines:
+        for line in f:
+            line = line.strip()
+            if line[-1] == "🐍":
+                mentors.append(line)
             else:
-                apprentis.append(line[:-1])
+                apprentis.append(line)
 
     # Calculating number of groups
     # (2 mentors by group,
@@ -45,40 +47,18 @@ def main():
     )
 
     # Aliassing groups
-    group_aliases = {
-        1: 'G',
-        2: 'H',
-        3: 'I',
-        4: 'J',
-        5: 'K',
-        6: 'L',
-        7: 'M',
-        8: 'N',
-        9: 'O',
-        10: 'P',
-        11: 'Q',
-        12: 'R',
-        13: 'S',
-        14: 'T' ,
-        15: 'U',
-        16: 'V',
-        17: 'W',
-    }
-
-
-
+    group_aliases = {i+1:chr(i+ord('G')) for i in range(17)}
+    
     # Writing results to file
     with open('groupes.txt', 'w') as f:
         f.write("Pour la prochaine période d'exercices, dirigez-vous vers les salons suivants. ")
         f.write("Vous aurez ainsi la chance de travailler avec des mentors en plus petits groupes.\n")
         for groupe, apprentis in groupes_apprentis.items():
             f.write(''.join([
-                'atelier-',
+                '#atelier-',
                 group_aliases[groupe],
                 ': ',
-                ', '.join(apprentis),
-                ', ',
-                ', '.join(groupes_mentors[groupe]),
+                ', '.join(apprentis + groupes_mentors[groupe]),
                 '\n',
                 ]))
 
@@ -102,7 +82,7 @@ def répartit_apprentis(
             groupes[n].append(personnes.pop())
             effectif += 1
 
-    # In cases when the total number of people
+    # In cases where the total number of people
     # is not a multiple of the number of groups,
     # then people are left unassigned
     # and need to be now allocated
