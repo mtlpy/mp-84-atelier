@@ -11,7 +11,7 @@ https://www.meetup.com/Montreal-Python/events/275591639/
 
 [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mtlpy/mp-84-atelier/blob/main/Notions-de-Python-1.0.ipynb)
 
-Voir aussi l'[aide-mémoire](https://github.com/mtlpy/mp-84-atelier/blob/main/aide_memoire.md)
+Voir aussi l'[aide-mémoire](https://github.com/mtlpy/mp-84-atelier/blob/main/aide_memoire.md#aide-m%C3%A9moire)
 qui définit tout les nouveaux concepts.
 
 
@@ -39,7 +39,7 @@ Les originaux sont disponibles sur le [site de la Ville de Montréal](https://do
 
 ### Murales
 
-**Question**: quel cartier de Montréal contient le plus de murales?
+**Question** Quel quartier de Montréal contient le plus de murales?
 
 [Vidéo](https://www.youtube.com/watch?v=We_5ooLSvFY&t=10264s)
 
@@ -49,7 +49,7 @@ Les originaux sont disponibles sur le [site de la Ville de Montréal](https://do
 
 ### Arbres
 
-**Question**: quel cartier de Montréal contient le moins de bouleaux?
+**Question** Quel quartier de Montréal contient le moins de bouleaux?
 
 [![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mtlpy/mp-84-atelier/blob/main/Arbres-1.0.ipynb)
 
